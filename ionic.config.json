@@ -1,0 +1,7 @@
+{
+  "name": "espion_game",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
