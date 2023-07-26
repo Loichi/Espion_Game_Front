@@ -1,0 +1,93 @@
+.custom-content {
+    background-color: RGB(1, 48, 57);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+
+    height: 90vh;
+  }
+  .salon{
+    color: RGB(219, 207, 163);
+    font-size: 32px;
+    font-weight: bolder;
+  }
+form{
+    height: 20vh;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label{
+    font-size: 22px;
+    font-weight: bold;
+    color: RGB(219, 207, 163);
+}
+input{
+    height: 6vh;  
+    width: 100%;
+    background-color: RGB(1, 48, 57);
+    border: 2px solid RGB(219, 207, 163);
+}
+
+button{
+    height: 5vh;
+    width: 60vw;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: RGB(1, 48, 57);
+    border: 2px solid RGB(219, 207, 163);
+    color: RGB(219, 207, 163);   
+}
+
+.list-content{
+    height: 40vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.joueurs{
+    color: RGB(219, 207, 163);
+    font-size: 18px;
+}
+
+ul.player-list {
+    list-style: none;
+    width: 80vw;
+    height: 40vh;
+    font-size: 18px;
+    overflow: auto
+  }
+  
+  /* Add this CSS to style the list items */
+  ul.player-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  ul.player-list li ion-icon {
+    color: black;
+
+  }
+  
+  .fleche{
+    color: RGB(219, 207, 163);
+    font-size: 40px;
+
+}

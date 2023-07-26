@@ -1,0 +1,73 @@
+.custom-content {
+    background-color: RGB(1, 48, 57);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.distrib-text{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    height: 60vh;
+    border-radius: 10px;
+
+  }
+  
+  .center-text {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .center-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  select {
+    height: 6vh;  
+    width: 100%;
+    background-color: RGB(1, 48, 57);
+    border: 2px solid RGB(219, 207, 163);
+  }
+  
+  button {
+    height: 5vh;
+    width: 60vw;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: RGB(1, 48, 57);
+    border: 2px solid RGB(219, 207, 163);
+    color: RGB(219, 207, 163);   
+
+  }
+  
+  .fin-partie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  

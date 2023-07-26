@@ -1,0 +1,46 @@
+<div class="custom-content">
+
+  <ng-container *ngIf="gameAreaService.showGamingCard$ | async as displayType">
+
+    <div *ngIf="displayType === 'gaming-card'">
+        <p class="distrib-text">Distribution role des joueurs</p>    
+        <app-gaming-card [joueursWithCards]="joueursWithCards"></app-gaming-card>
+    </div>
+    
+
+    <div *ngIf="displayType === 'timer'">
+      <app-timer></app-timer>
+    </div>
+    
+
+    <div class="vote-container" *ngIf="displayType === 'vote'">
+      <div class="center-text">
+        <p>
+          Votez pour le joueur que vous pensez être l'espion !
+        </p>
+      </div>
+      
+      <div class="center-button">
+        <select [(ngModel)]="joueurSelectionne">
+          <option *ngFor="let joueurCard of joueursWithCards" [ngValue]="joueurCard.joueur">
+            {{ joueurCard.joueur.nom }}
+          </option>
+        </select>
+      </div>
+      <button (click)="validerVote()">Voter</button>
+    </div>
+    
+    <div *ngIf="displayType === 'espion-win'" class="fin-partie">
+      <p class="distrib-text">L'espion a gagné</p>    
+      <button (click)="goHomeMenu()">Fin de partie</button>   
+    
+    </div>
+
+    <div *ngIf="displayType === 'espion-lose'" class="fin-partie">
+      <p class="distrib-text">Felicitation vous avez demasqué l'espion</p> 
+      <button (click)="goHomeMenu()">Fin de partie</button>   
+    
+    </div>
+  </ng-container>
+  
+</div>

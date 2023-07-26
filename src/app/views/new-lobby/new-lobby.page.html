@@ -1,0 +1,33 @@
+<div class="custom-content">
+
+  <div class="main-content">
+
+    <p class="salon">Salon</p>
+    
+    <form (ngSubmit)="createJoueur()">
+      <label for="nomJoueur">Nom du joueur</label>
+      <input id="nomJoueur" name="nomJoueur" type="text" [(ngModel)]="nomJoueur">
+      <button type="submit">Ajouter</button>
+    </form>
+    
+    
+    <div class="list-content">
+
+      <p class="joueurs">Liste des joueurs</p>
+      
+      <ul class="player-list">
+        <li *ngFor="let joueur of joueurs">
+          {{ joueur.nom }}
+          <ion-icon name="close-circle" (click)="deleteJoueur(joueur)"></ion-icon>
+        </li>
+      </ul>
+    </div>
+    
+    <button type="button" (click)="deleteAllJoueurs()">Supprimer tous les joueurs</button>
+    
+    <button type="button" (click)="startGame()">Commencer la partie</button>
+
+    <ion-icon name="arrow-back-outline" class="fleche" (click)="onArrowClick()"></ion-icon>
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+<!-- gaming-card.component.html -->
+<div class="flip-card" [ngClass]="{ 'flipped': isFlipped }" (click)="toggleFlip()">
+  <div class="front">
+    <p class="centered">Role de : </p>
+    <p class="centered">{{ joueursWithCards[currentIndex]?.joueur?.nom }}</p>
+  </div>
+  <div class="back">
+    <h2 class="centered" *ngIf="isFlipped">{{ joueursWithCards[currentIndex]?.carte?.domaineEntreprise }}</h2>
+    <p class="centered" *ngIf="isFlipped">{{ joueursWithCards[currentIndex]?.carte?.poste }}</p>
+  </div>
+</div>
